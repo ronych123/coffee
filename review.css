@@ -1,0 +1,100 @@
+.customer-review-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    top: 2530px;
+}
+.customer-review-title1 {
+    color: rgb(241, 188, 134);
+    margin-left: 10px;
+}
+.review-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 15px;
+    position: absolute;
+    z-index: 2;
+    top: 2625px;
+    width: 80%;
+    height: 500px;
+}
+.review-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 360px;
+    height: 370px;
+    border: 1px solid gray;
+}
+.straight-quotes {
+    width: 50px;   
+}
+.customer-image {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 55px;
+    margin-top: 10px;
+}
+.review-parag {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    width: 340px;
+    text-align: center;
+    margin-top: 13px;
+}
+.reviewer-name {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+@media (max-width: 1140px) {
+    .customer-review-title {      
+        top: 3405px;
+    }
+    .review-grid {
+        grid-template-columns: repeat(2, 1fr);
+        top: 3480px;
+        row-gap: 20px;  
+    }
+}
+
+@media (min-width: 712px) and (max-width: 773px) {
+    .customer-review-title {      
+        top: 4885px;
+    }
+    .review-grid {
+        grid-template-columns: repeat(1, 1fr);
+        top: 4970px;
+        row-gap: 20px;  
+        place-items: center;
+    }   
+} 
+
+@media (max-width: 711px) {
+    .customer-review-title {      
+        top: 5285px;
+    }
+    .review-grid {
+        grid-template-columns: repeat(1, 1fr);
+        top: 5370px;
+        row-gap: 20px;  
+        place-items: center;
+    }  
+}

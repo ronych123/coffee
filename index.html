@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title></title>
+            <link rel="stylesheet" href="index.css">
+            <link rel="stylesheet" href="about-us.css">
+            <link rel="stylesheet" href="menu.css">
+            <link rel="stylesheet" href="products.css">
+            <link rel="stylesheet" href="review.css">
+            <link rel="stylesheet" href="contact.css">
+            <link rel="stylesheet" href="blogs.css">
+            <link rel="stylesheet" href="footer.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        </head>
+
+        <body>
+            <img src="images/coffee-background.png" class="home-background">
+
+            <div class="head">
+                
+                <img src="images/coffee-logo1.png" class="coffee-logo">
+               
+                <div class="nav nav-js">
+                        <div class="closeMenu"> <i class="fa-solid fa-xmark"></i> </div>
+                        
+                        <div>
+                            <a class="home nav-all" onclick="scrollToHeight(0)">Home</a>
+                            <a class="about nav-all" onclick="about()">About</a>
+                            <a class="menu nav-all" onclick="menu()">Menu</a>
+                            <a class="products nav-all" onclick="products()">Products</a>
+                            <a class="review nav-all" onclick="review()">Review</a>
+                            <a class="contact nav-all" onclick="contact()">Contact</a>
+                            <a class="blogs nav-all" onclick="blogs()">Blogs</a> 
+                        </div>
+                                                 
+                </div> 
+
+
+                <div class="head-right">
+                    <div class="cart-shopping js-card" > <i class="fa-solid fa-cart-shopping" onclick="cardItem()"></i> </div>
+                    <div class="openMenu"> <i class="fa-solid fa-bars"></i> </div>
+                </div>
+
+            </div>
+                                <div class="add-to-card js-add-to-card"></div>
+            <div class="home-body">
+                <div class="sentence-1">fresh coffee in the morning</div>
+                <div class="sentence-2">Discover the perfect blend of warmth and flavor in every cup, making your moments extraordinary, one sip at a time.</div>
+                <button class="get-button">Get It Now</button>
+            </div>
+
+            <div class="about-us"> <span class="about-us-child">about </span> us</div>
+
+            <div class="about-us-container">
+                <div class="about-us-img"> <img src="images/about-us-img.jpg" class="about-us-img">  </div> 
+                <div class="about-us-paragraph">
+                    <div class="about-us-paragraph-title">what makes our coffee special?</div> 
+                    <br>
+                    <div class="about-us-paragraph-description">
+                        Celebrate the essence of our coffee, meticulously crafted from the world's finest beans, 
+                        roasted to perfection, and brewed with passion.
+                        With each sip, you're not just tasting coffee; you're experiencing a commitment to quality,
+                        a celebration of culture, and a sip of the extraordinary. <br> <br> 
+                        Indulge in the special blend that transforms a simple moment into a memorable experience.
+                    </div>              
+                    <button class="learn-more-button">Learn More</button>      
+                </div> 
+            </div>
+
+            <div class="our-menu"> our <span class="our-menu-child"> menu </span> </div>
+
+            <div class="menu-container">
+                <div class="grid-menu-container">
+                    <div class="menu-grid">
+                        <img src="images/menu-images/images-coffee-cups-placed-box-2.jpg" class="menu-images">
+                        <div class="coffee-cup-title">tasty and healthy</div>
+                        <div class="coffee-cup-price">$15.99 <span class="old-price"> $20.99</span></div>
+                        <button class="add-to-cart-button" onclick="addTodo('images/menu-images/images-coffee-cups-placed-box-2.jpg')">add to cart</button>
+                    </div>
+                    <div class="menu-grid">
+                        <img src="images/menu-images/images-coffee-cups-placed-box-3.jpg" class="menu-images">
+                        <div class="coffee-cup-title">tasty and healthy</div>
+                        <div class="coffee-cup-price">$15.99 <span class="old-price"> $20.99</span></div>
+                        <button class="add-to-cart-button" onclick="addTodo('images/menu-images/images-coffee-cups-placed-box-3.jpg')">add to cart</button>
+                    </div>
+                    <div class="menu-grid">
+                        <img src="images/menu-images/images-coffee-cups-placed-box-4.jpg" class="menu-images">
+                        <div class="coffee-cup-title">tasty and healthy</div>
+                        <div class="coffee-cup-price">$15.99 <span class="old-price"> $20.99</span></div>
+                        <button class="add-to-cart-button" onclick="addTodo('images/menu-images/images-coffee-cups-placed-box-4.jpg')">add to cart</button>
+                    </div>
+                    <div class="menu-grid">
+                        <img src="images/menu-images/images-coffee-cups-placed-box-5.jpg" class="menu-images">
+                        <div class="coffee-cup-title">tasty and healthy</div>
+                        <div class="coffee-cup-price">$15.99 <span class="old-price"> $20.99</span></div>
+                        <button class="add-to-cart-button" onclick="addTodo('images/menu-images/images-coffee-cups-placed-box-5.jpg')">add to cart</button>
+                    </div>
+                    <div class="menu-grid">
+                        <img src="images/menu-images/images-coffee-cups-placed-box-6.jpg" class="menu-images">
+                        <div class="coffee-cup-title">tasty and healthy</div>
+                        <div class="coffee-cup-price">$15.99 <span class="old-price"> $20.99</span></div>
+                        <button class="add-to-cart-button" onclick="addTodo('images/menu-images/images-coffee-cups-placed-box-6.jpg')">add to cart</button>
+                    </div>
+                    <div class="menu-grid">
+                        <img src="images/menu-images/images-coffee-cups-placed-box-7.jpg" class="menu-images">
+                        <div class="coffee-cup-title">tasty and healthy</div>
+                        <div class="coffee-cup-price">$15.99 <span class="old-price"> $20.99</span></div>
+                        <button class="add-to-cart-button" onclick="addTodo('images/menu-images/images-coffee-cups-placed-box-7.jpg')">add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="latest-product-title"> latest <span class="latest-product-title1"> products </span> </div>
+            
+            <div class="latest-product-container">
+                <div class="latest-product-grid">
+
+                    <div class="latest-product-child child-1">
+                        <div class="latest-product-icons">
+                            <div class="icon-1"  onclick="addTodo('images/lastest-products/first-product.png')"> <i class="fa-solid fa-cart-shopping"></i> </div>
+                            <div class="icon-2"> <i class="fa-solid fa-heart"></i> </div>
+                            <div class="icon-3"> <i class="fa-solid fa-eye"></i> </div>
+                        </div>
+
+                        <img src="images/lastest-products/first-product.png" class="lastest-product-images">
+
+                        <div class="fresh-coffee">fresh coffee</div>
+
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-regular fa-star-half-stroke" style="color: #f1bc86;"></i>
+                        </div>
+
+                        <div class="coffee-price">$15.99 <span class="old-price"> $20.99</span></div>
+                          
+                    </div>
+                        
+                    <div class="latest-product-child child-2">
+                        <div class="latest-product-icons">
+                            <div class="icon-1"  onclick="addTodo('images/lastest-products/second-product.png')"> <i class="fa-solid fa-cart-shopping"></i> </div>
+                            <div class="icon-2"> <i class="fa-solid fa-heart"></i> </div>
+                            <div class="icon-3"> <i class="fa-solid fa-eye"></i> </div>
+                        </div>
+
+                        <img src="images/lastest-products/second-product.png" class="lastest-product-images">
+
+                        <div class="fresh-coffee">fresh coffee</div>
+
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-regular fa-star-half-stroke" style="color: #f1bc86;"></i>
+                        </div>
+
+                        <div class="coffee-price">$15.99 <span class="old-price"> $20.99</span></div>
+
+                    </div>
+
+                    <div class="latest-product-child child-3">
+                        <div class="latest-product-icons">
+                            <div class="icon-1"  onclick="addTodo('images/lastest-products/third-product.png')"> <i class="fa-solid fa-cart-shopping"></i> </div>
+                            <div class="icon-2"> <i class="fa-solid fa-heart"></i> </div>
+                            <div class="icon-3"> <i class="fa-solid fa-eye"></i> </div>
+                        </div>   
+
+                        <img src="images/lastest-products/third-product.png" class="lastest-product-images">
+
+                        <div class="fresh-coffee">fresh coffee</div>
+
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-regular fa-star-half-stroke" style="color: #f1bc86;"></i>
+                        </div>
+
+                        <div class="coffee-price">$15.99 <span class="old-price"> $20.99</span></div>
+                        
+                    </div>
+
+                </div>
+            </div>  
+            
+            <div class="customer-review-title"> customer's <span class="customer-review-title1"> review </span> </div>
+            
+            <div class="review-container">
+                <div class="review-grid">
+
+                    <div class="review-child"> 
+
+                        <img src="images/review/straight-quotes.png" class="straight-quotes">
+
+                        <div class="review-parag">
+                            Stumbled upon this coffee shop and was pleasantly surprised. 
+                            The baristas are friendly, and the coffee is expertly brewed. 
+                            My new favorite spot for a caffeine fix! The delightful pastries are the icing on the cake, making it a complete experience.
+                        </div>
+
+                        <img src="images/customers-review/customer-2.jpg" class="customer-image">
+                        <div class="reviewer-name">Clarke Griffen</div>
+
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-regular fa-star-half-stroke" style="color: #f1bc86;"></i>
+                        </div>
+                        
+                    </div>
+                        
+                    <div class="review-child"> 
+
+                        <img src="images/review/straight-quotes.png" class="straight-quotes">
+
+                        <div class="review-parag">
+                            Cozy Atmosphere, Perfect Brew! The ambiance here is warm and inviting, and the coffee is outstanding. 
+                            A great spot to relax and enjoy a cup of perfection! Plus, the friendly staff adds a personal touch 
+                            that keeps me coming back for more.
+                        </div>
+
+                        <img src="images/customers-review/customer-1.jpg" class="customer-image">
+                        <div class="reviewer-name">Sofia Anderson</div>
+
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-regular fa-star-half-stroke" style="color: #f1bc86;"></i>
+                        </div>
+                        
+                    </div>
+
+                    <div class="review-child"> 
+
+                        <img src="images/review/straight-quotes.png" class="straight-quotes">
+
+                        <div class="review-parag">
+                            Top-Notch Service! The staff here is incredibly knowledgeable about their coffee beans and brewing methods. 
+                            The attention to detail reflects in every sip. 
+                            A must-visit for coffee enthusiasts! The cozy ambiance and 
+                            free Wi-Fi create a perfect spot for work or relaxation.
+                        </div>
+
+                        <img src="images/customers-review/customer-3.jpg" class="customer-image">
+                        <div class="reviewer-name">Octivia Blake</div>
+
+                        <div class="star-rating">
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-solid fa-star" style="color: #f1bc86;"></i>
+                            <i class="fa-regular fa-star-half-stroke" style="color: #f1bc86;"></i>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+                <div class="contact-us"> <span class="contact-us-child">contact </span> us</div>
+
+                <div class="contact-us-container">
+                    <div> 
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52918450.40025156!2d-161.85240697328845!3d35.949761324666035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2slb!4v1702310863547!5m2!1sen!2slb"
+                        class="contact-us-img" style="border:0;" 
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+                    </div>
+
+                    <div class="contact-us-form">
+                        <div class="form-title"> get in touch </div>
+                        <div class="input-container"> <i class="fa-solid fa-user fa-lg" style="color: #ffffff; margin-left: 13px;"></i> <input type="text" placeholder="Name" class="text-input"> </div>
+                        <div class="input-container"> <i class="fa-solid fa-envelope fa-lg" style="color: #ffffff; margin-left: 13px;"></i> <input type="email" placeholder="Email" class="text-input"> </div>
+                        <div class="input-container"> <i class="fa-solid fa-phone-flip fa-lg" style="color: #ffffff; margin-left: 13px;"></i> <input type="text" placeholder="Number" class="text-input"> </div>
+                        
+                                   
+                        <button class="contact-now-button">Contact Now</button>      
+                    </div> 
+                </div>
+
+                <div class="our-blogs">our <span class="our-blogs-child">blogs </span> </div>
+
+                <div class="blogs-container">
+                    <div class="blogs-grid">
+    
+                        <div class="blogs-child"> 
+                            <div class="pic-container"> 
+                                <img src="images/blog/blog1-pic.jpg" class="blog1"> 
+                            </div>
+                            <h3 class="blog-title">Tasty And Refreshing Coffee</h3>
+                            <div class="blog-publisher">By Admin/ 1st May, 2021</div>
+                            <div class="blog-comment">
+                                Dive into the world of coffee tasting, 
+                                where every sip is a story of flavors and craftsmanship.
+                            </div>  
+                            <button class="blog-button">Read More</button>                   
+                        </div>
+                            
+                        <div class="blogs-child"> 
+                            <div class="pic-container"> 
+                                <img src="images/blog/blog2-pic.jpg" class="blog2"> 
+                            </div>
+                            <h3 class="blog-title">Tasty And Refreshing Coffee</h3>
+                            <div class="blog-publisher">By Admin/ 1st May, 2021</div>
+                            <div class="blog-comment">
+                                Join our flavorful journey, 
+                                exploring the unique notes that make each coffee a distinct experience.
+                            </div>
+                            <button class="blog-button">Read More</button>
+                        </div>
+    
+                        <div class="blogs-child"> 
+                            <div class="pic-container"> 
+                                <img src="images/blog/blog3-pic.jpg" class="blog3"> 
+                            </div>
+                            <h3 class="blog-title">Tasty And Refreshing Coffee</h3>
+                            <div class="blog-publisher">By Admin/ 1st May, 2021</div>
+                            <div class="blog-comment">
+                                Experience the art of coffee through your senses, 
+                                savoring the diverse tastes that make each cup special.
+                            </div>
+                            <button class="blog-button">Read More</button>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="footer-container">
+                    <div class="brands-child">
+                        <div class="brand-border">
+                            <i class="fa-brands fa-facebook-f fa-xl" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="brand-border">
+                            <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="brand-border">
+                            <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="brand-border">
+                            <i class="fa-brands fa-linkedin-in fa-xl" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="brand-border">
+                            <i class="fa-brands fa-pinterest-p fa-xl" style="color: #ffffff;"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="button-wrap">
+                        <button class="button-ref" onclick="scrollToHeight(0)"> Home </button>
+                        <button class="button-ref" onclick="about()"> About </button>
+                        <button class="button-ref" onclick="menu()"> Menu </button>
+                        <button class="button-ref" onclick="products()"> Products </button>
+                        <button class="button-ref" onclick="review()"> Review </button>
+                        <button class="button-ref" onclick="contact()"> Contact </button>
+                        <button class="button-ref" onclick="blogs()"> Blogs </button>
+                    </div>
+                </div>
+
+            <script src="index.js"> </script>
+            <script src="icard.js"></script>
+        </body>
+    </html>

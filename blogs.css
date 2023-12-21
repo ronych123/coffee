@@ -1,0 +1,129 @@
+.our-blogs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 2;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    top: 3560px;
+}
+.our-blogs-child {
+    color: rgb(241, 188, 134);
+    margin-left: 10px;
+}
+.blogs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    column-gap: 15px;
+    position: absolute;
+    z-index: 2;
+    top: 3650px;
+    width: 80%;
+    height: 500px;
+}
+.blogs-child {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 450px;
+    border: 1px solid gray;
+}
+.pic-container {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.blog1, .blog2, .blog3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+    transition: transform 0.3s;
+}
+.blog1:hover, .blog2:hover, .blog3:hover {
+    transform: scale(1.2);
+}
+.blog-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 22px;
+}
+.blog-publisher {
+    color: rgb(192, 148, 104);
+    font-weight: 600;
+    margin-left: 22px;
+}
+.blog-comment {
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    width: 85%;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-left: 22px;
+}
+.blog-button {   
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    background-color: rgb(224, 159, 94);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    width: 120px;
+    height: 30px;
+    transition: background-color 1s ease;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 22px;
+}
+.blog-button:hover {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+@media (max-width: 1140px) {
+    .our-blogs {      
+        top: 5055px;
+    }
+    .blogs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        top: 5130px;
+        row-gap: 20px;
+    }
+}
+@media (min-width: 712px) and (max-width: 773px) {
+    .our-blogs {      
+        top: 6955px;
+    }
+    .blogs-grid {
+        grid-template-columns: repeat(1, 1fr);
+        top: 7030px;
+        row-gap: 20px;
+        place-items: center;
+    }
+}
+@media (max-width: 711px) {
+    .our-blogs {      
+        top: 7355px;
+    }
+    .blogs-grid {
+        grid-template-columns: repeat(1, 1fr);
+        top: 7430px;
+        row-gap: 20px;
+        place-items: center;
+    }
+}
