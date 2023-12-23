@@ -226,7 +226,7 @@ body {
     }
     .nav {
         top: 100px;
-        right: -50%;
+        right: -60%;
         position: absolute;
         z-index: 3;
         width: 200px;
@@ -287,7 +287,7 @@ body {
         width: 100%;
         left: 0;
         align-items: center;
-        top: 40%;
+        top: 30%;
     }
     .sentence-1 {
         font-family: sans-serif;
