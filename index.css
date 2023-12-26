@@ -151,6 +151,13 @@ body {
 }
 
  @media(min-width: 431px) and (max-width: 750px) {
+    .home-background {
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        top: 0;
+    }
     .home-body {
         width: 100%;
         left: 0;
