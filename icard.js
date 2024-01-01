@@ -26,6 +26,7 @@ function renderTodoList() {
                 
                 <div onclick="
                 todoList.splice(${i}, 1);
+                saveTodoListToLocalStorage();
                 renderTodoList();
                 " class="delete-todo-button">
                     <i class="fa-solid fa-xmark"></i>
