@@ -166,6 +166,7 @@ body {
         width: 100%;
         left: 0;
         align-items: center;
+        justify-content: flex-start;
     }
     .head {
         justify-content: space-between;
@@ -305,6 +306,7 @@ body {
         width: 100%;
         left: 0;
         align-items: center;
+        justify-content: flex-start;
     }
     .sentence-1 {
         font-family: sans-serif;
