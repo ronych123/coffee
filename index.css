@@ -329,3 +329,17 @@ body {
         margin-bottom: 25px;
     }
 }
+
+@media only screen and (min-width: 450px) {
+    .home-sweet {
+        width: 50%;
+        height: 300px;
+    }
+    .home-background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+    }
+  }
