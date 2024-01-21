@@ -157,6 +157,8 @@ body {
 @media (min-width: 900px) and (max-width: 1000px) {
     .home-background {
         top: 0;
+        height: max-content;
+        width: max-content;
     }
     .home-body {
         top: 0;
